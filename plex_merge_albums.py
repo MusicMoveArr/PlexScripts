@@ -46,8 +46,11 @@ for artist in artists:
         albums = artist.albums()
         album_map = defaultdict(list)
 
+        chars_to_remove = ",./;'[]()";
+        translator = str.maketrans('', '', chars_to_remove)
+
         for album in albums:
-            title = album.title.strip().lower()
+            title = album.title.strip().lower().translate(translator)
             album_map[title].append(album)
 
         # Process potential duplicates
@@ -61,6 +64,7 @@ for artist in artists:
 
                 # Attempt merge using PlexAPI
                 album_merge(album_group[0], album_group[1:], PLEX_URL, PLEX_TOKEN)
+
 
     except Exception as artist_err:
         print(f"⚠️ Error processing artist '{artist.title}': {artist_err}")
