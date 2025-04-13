@@ -59,21 +59,28 @@ It will use the merge API, the same you would use in the browser but of course, 
 ```
 
 # Usage on ArchLinux
+```
 yay -S  python python-plexapi
 git clone https://github.com/MusicMoveArr/PlexScripts.git
 cd PlexScripts
-
+```
 Update the script before using it with your URL/Token
+
+```
 python3 plex_merge_albums.py
+```
 
 # Usage on Debian (Ubuntu, Linux Mint etc) (Not tested)
+```
 sudo apt update
 sudo apt install python3 python3-pip
 pip install plexapi
 git clone https://github.com/MusicMoveArr/PlexScripts.git
 cd PlexScripts
-
+```
 Update the script before using it with your URL/Token
+```
 python3 plex_merge_albums.py
+```
 
 
