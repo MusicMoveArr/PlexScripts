@@ -26,29 +26,21 @@ It will use the merge API, the same you would use in the browser but of course, 
     - Decade of debauchery | key: /library/metadata/3349841
     - Decade of Debauchery | key: /library/metadata/3093459
     - Decade of Debauchery | key: /library/metadata/3339958
-/usr/lib/python3.13/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'plex.arr.bottlepost.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
   ✅ API merge successful for: Decade of debauchery
   🔁 Found 2 duplicates of album 'night electric night (platinum edition)'
   ⬇  Albums to merge:
     - Night Electric Night (Platinum Edition) | key: /library/metadata/3093468
     - Night Electric Night (Platinum Edition) | key: /library/metadata/3339966
-/usr/lib/python3.13/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'plex.arr.bottlepost.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
   ✅ API merge successful for: Night Electric Night (Platinum Edition)
   🔁 Found 2 duplicates of album 'the perfect cult'
   ⬇  Albums to merge:
     - The Perfect Cult | key: /library/metadata/3093426
     - The Perfect Cult | key: /library/metadata/3339984
-/usr/lib/python3.13/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'plex.arr.bottlepost.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
   ✅ API merge successful for: The Perfect Cult
   🔁 Found 2 duplicates of album 'synthetic generation'
   ⬇  Albums to merge:
     - Synthetic Generation | key: /library/metadata/3093566
     - Synthetic Generation | key: /library/metadata/3345752
-/usr/lib/python3.13/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'plex.arr.bottlepost.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
   ✅ API merge successful for: Synthetic Generation
 
 🎤 Processing artist: Deaundre
@@ -58,8 +50,6 @@ It will use the merge API, the same you would use in the browser but of course, 
   ⬇  Albums to merge:
     - Time Will Reveal: the Complete Motown Albums | key: /library/metadata/2667225
     - Time Will Reveal: The Complete Motown Albums | key: /library/metadata/2667223
-/usr/lib/python3.13/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'plex.arr.bottlepost.me'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
   ✅ API merge successful for: Time Will Reveal: the Complete Motown Albums
 
 🎤 Processing artist: Debauchery
@@ -69,21 +59,28 @@ It will use the merge API, the same you would use in the browser but of course, 
 ```
 
 # Usage on ArchLinux
+```
 yay -S  python python-plexapi
 git clone https://github.com/MusicMoveArr/PlexScripts.git
 cd PlexScripts
-
+```
 Update the script before using it with your URL/Token
+
+```
 python3 plex_merge_albums.py
+```
 
 # Usage on Debian (Ubuntu, Linux Mint etc) (Not tested)
+```
 sudo apt update
 sudo apt install python3 python3-pip
 pip install plexapi
 git clone https://github.com/MusicMoveArr/PlexScripts.git
 cd PlexScripts
-
+```
 Update the script before using it with your URL/Token
+```
 python3 plex_merge_albums.py
+```
 
 
