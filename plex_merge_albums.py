@@ -1,7 +1,10 @@
 from plexapi.server import PlexServer
 from collections import defaultdict
 from urllib.parse import quote
+import urllib3
 import requests
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ==== CONFIGURATION ====
 PLEX_URL = 'PLEX_URL_HERE'       # Replace it with your "https://plex...:32400"
